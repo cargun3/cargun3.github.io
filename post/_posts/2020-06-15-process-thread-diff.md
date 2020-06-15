@@ -77,7 +77,7 @@ Process의 구조에 대해 간략하게 설명하면,
 #### 컨택스트 스위칭(Context Switching) 이란 ? <br>
 > CPU에서 여러 프로세스(Process)를 돌아가면서 작업을 처리하는데 이 과정을 말한다.<br>
 > 즉, CPU사용 권한을 프로세스(Process)들 끼리 넘겨주는 과정을 말한다.<br>
-> 동작 중인 프로세스(Process)가 대기 상태로 되면 해당 프로세스(Process)의 상태(Context)를 보관하고<br>
+> 동작 중인 프로세스(Process)가 대기 상태로 되면 해당 프로세스(Process)의 상태(Context)를 보관하고
 > 대기하고 있던 다음 프로세스(Process)가 동작하면서 해당 프로세스(Process)의 상태(Context)를 복구하는 작업을 말한다.
 
 - 멀티 쓰레드(multi Thread)
