@@ -81,8 +81,8 @@ a=12
 이 S가 가질 수 있는 값의 범위에 따라서 `세마포어(Semaphore)`에 이어 `뮤텍스(Mutex)`라는 개념이 생기게 된다.
 
 #### 세마포어의 종류 <br>
-> 세마포어(Semaphore)는 유지할 수 있는 값의 범위에 따라 이진 세마포어(Binary Semaphore)와 범용 세마포어(Counting Semaphore)로 구분된다.
-> 초기값이 0 ~ N까지 가질수 있는 세마포어(Semaphore)를 카운팅 세마포어(Counting semaphore) 또는 범용 세마포어(general semaphore) 라고 한다.
+> 세마포어(Semaphore)는 유지할 수 있는 값의 범위에 따라 이진 세마포어(Binary Semaphore)와 범용 세마포어(Counting Semaphore)로 구분된다.<br>
+> 초기값이 0 ~ N까지 가질수 있는 세마포어(Semaphore)를 카운팅 세마포어(Counting semaphore) 또는 범용 세마포어(general semaphore) 라고 한다.<br>
 > 이진 세마포어(Binary semaphore) 는 세마포어(Semaphore)의 초기 값이 0또는 1만 가질 수 있는 세마포어(Semaphore)다.
 
 ### 뮤텍스(Mutex) 정의
