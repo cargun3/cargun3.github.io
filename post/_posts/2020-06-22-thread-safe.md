@@ -97,7 +97,7 @@ public static void main(String[] args) throws Exception {
 
 그래서 ++연산은 원자적 연산(atomic operation)에 속하지 않는 연산자이다. 이 말은 즉, **연산의 최소 단위가 아니며, 쓰레드(Thread)가 간섭할 수 있다**는 말이 된다.
 
-![multi-thread-stack](/assets/img/posts/mutli-thread-stack.png)
+![mutli-thread-stack](/assets/img/posts/mutli-thread-stack.png)
 
 이 내용을 위의 예제에 적용 해보면,
 >쓰레드1번에서 최초 프레임(Frame)을 만들고 this 를 로딩한다.<br>
