@@ -97,19 +97,19 @@ public static void main(String[] args) throws Exception {
 
 그래서 ++연산은 원자적 연산(atomic operation)에 속하지 않는 연산자이다. 이 말은 즉, **연산의 최소 단위가 아니며, 쓰레드(Thread)가 간섭할 수 있다**는 말이 된다.
 
-![multi-thread-stack](/assets/img/posts/multi-thread-stack.png)
+![multi-thread-stack](/assets/img/posts/mutli-thread-stack.png)
 
 이 내용을 위의 예제에 적용 해보면,
->쓰레드1번에서 최초 프레임(Frame)을 만들고 this 를 로딩한다.
-변수의 ++를 호출하기 위해 값을 가져온다.(get field) 
-예를 들어, 10을 가져왔다고 한다. 
-그런데 갑자기 쓰레드2 가 끼어든다. 
-**쓰레드 1은 인덱스를 1증가 시키려고 프레임(Frame)에 index 값(10)을 로드한 상태로 멈춰버린다.** 
-쓰레드2가 index를 가져오고 값을 1증가시키고 리턴까지 해버린다. 
-결국 리턴 값은 11이 된다. calculator index의 값은 11로 증가된 상태로 변한다. 
-이제 쓰레드 1이 재개된다. 
-이미 프레임(Frame)에 올라와 있는 값은 10인 상태 이므로 1증가 시켜서 11로 만들고 리턴을 한다. 
-결국 calculator 의 index 를 다시 11로 덮어 쓴다.
+>쓰레드1번에서 최초 프레임(Frame)을 만들고 this 를 로딩한다.<br>
+변수의 ++를 호출하기 위해 값을 가져온다.(get field)<br>
+예를 들어, 10을 가져왔다고 한다.<br>
+그런데 갑자기 쓰레드2 가 끼어든다.<br> 
+**쓰레드 1은 인덱스를 1증가 시키려고 프레임(Frame)에 index 값(10)을 로드한 상태로 멈춰버린다.**<br>
+쓰레드2가 index를 가져오고 값을 1증가시키고 리턴까지 해버린다.<br>
+결국 리턴 값은 11이 된다. calculator index의 값은 11로 증가된 상태로 변한다.<br>
+이제 쓰레드 1이 재개된다.<br>
+이미 프레임(Frame)에 올라와 있는 값은 10인 상태 이므로 1증가 시켜서 11로 만들고 리턴을 한다.<br>
+결국 calculator 의 index 를 다시 11로 덮어 쓴다.<br>
 
 위의 상태가 쓰레드1,쓰레드2가 돌면서 반복되다 보니 최초 결과 값이 예상치 못한 결과값이 나오는 형태가 된다.(쓰레드의 개입시점은 매번 다르기 때문에 결과가 매번 다르게 나올 수 있다.)
 결국 ++연산은 원자적 연산(Atomic operation)이 아니기 때문에 발생되는 문제이다.
