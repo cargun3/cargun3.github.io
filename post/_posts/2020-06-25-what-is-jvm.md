@@ -38,11 +38,11 @@ Java Application을 실행하게되면 아래의 과정을 거쳐 실행하게 �
 6. 이러한 과정 속에 JVM은 필요에 따라 GC(Garbage Collector) 같은 관리 작업을 계속 수행한다.
 
 위의 과정을 통해 Java Application은 동작하게된다. <br> 아래는 각 과정별에 등장한 요소들에 대한 간략한 설명이다.
-- 자바 컴파일러(Java Compiler)
+- 자바 컴파일러(Java Compiler)<br>
 자바 소스코드(.java)를  바이트 코드(Byte Code(.class))로 `변환`하는 역할을 한다.
-- 클래스 로더(Class Loader)
+- 클래스 로더(Class Loader)<br>
 자바의 바이트 코드(Byte Code)를 읽어서 JVM의 실행 엔진(Execution Engine)이 사용할 수 있도록 **런타임 데이터 영역(Runtime Data Area)에 적재하는 역할**을 한다.
-- 실행 엔진(Execution Engine)
+- 실행 엔진(Execution Engine)<br>
 클래스(.class)를 실행시키는 역할을 한다. 실행 엔진(Execution Engine)은 **메모리에 적재된 바이트 코드(Byte Code)를 실제로 JVM 내부에서 기계(Machine)가 실행할 수 있는 형태로 변경**한다. <br>이 때에는 두가지 방식을 사용하게 된다.
 	- 인터프리터(Interpreter)
 명령어를 그때 그때 해석해서 실행하는 방식이다.
