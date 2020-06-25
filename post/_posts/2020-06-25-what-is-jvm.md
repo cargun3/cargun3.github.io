@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: JVM(Java Virtual Machine)이란 ?
