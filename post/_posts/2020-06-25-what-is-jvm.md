@@ -45,9 +45,9 @@ Java Application을 실행하게되면 아래의 과정을 거쳐 실행하게 �
 - 실행 엔진(Execution Engine)
 클래스(.class)를 실행시키는 역할을 한다. 실행 엔진(Execution Engine)은 **메모리에 적재된 바이트 코드(Byte Code)를 실제로 JVM 내부에서 기계(Machine)가 실행할 수 있는 형태로 변경**한다. <br>이 때에는 두가지 방식을 사용하게 된다.
 	- 인터프리터(Interpreter)
-명령어를 그때 그때 해석해서 실행하는 방식이다.
+	명령어를 그때 그때 해석해서 실행하는 방식이다.
 	- JIT(Just-In-Time)
-인터프리터(Interpreter)의 단점(매번 해석하기 때문에 느리다.)을 보완하기 위해 도입된 `컴파일러(Compiler)`이다.<br> 인터프리터(Interpreter) 방식으로 실행하다가 **적절한 시점에서 바이트 코드(Byte Code) 전체를 컴파일(Compile)하여 네이티브 코드(Native Code)로 변경하고, 이후에는 더 이상 인터프리팅(Interpreting_해석)하지 않고 네이티브 코드(Native Code)로 직접 실행하는 방식이다.** 네이티브 코드(Native Code)는 캐시(Cache)에 보관하기 때문에 한 번 컴파일(Compile)된 코드는 빠르게 수행한다.
+	인터프리터(Interpreter)의 단점(매번 해석하기 때문에 느리다.)을 보완하기 위해 도입된 `컴파일러(Compiler)`이다.<br> 인터프리터(Interpreter) 방식으로 실행하다가 **적절한 시점에서 바이트 코드(Byte Code) 전체를 컴파일(Compile)하여 네이티브 코드(Native Code)로 변경하고, 이후에는 더 이상 인터프리팅(Interpreting_해석)하지 않고 네이티브 코드(Native Code)로 직접 실행하는 방식이다.** 네이티브 코드(Native Code)는 캐시(Cache)에 보관하기 때문에 한 번 컴파일(Compile)된 코드는 빠르게 수행한다.
 - 런타임 데이터 영역(Runtime Data Areas)
 런타임 데이터 영역(Runtime Data Areas)은 Application을 수행하기 위해 **운영체제에서 할당받는 메모리 영역이다.** 즉, 다시 말해 JVM이 프로그램을 수행하기 위해 운영체제에서 할당받는 JVM 메모리영역이라 할 수 있다. 이 영역은 5개의 영역으로 나눌 수 있다. 이 중 PC 레지스터(Program Counter Register), 스택(Stack Area), 네이티브 메서드 스택(Native Method Stack)은 쓰레드(Thread)마다 하나씩 생성되며 **힙(Heap Area), 메소드 영역(Method Area) 은 모든 쓰레드(Thread)가 공유**해서 사용한다.
 
