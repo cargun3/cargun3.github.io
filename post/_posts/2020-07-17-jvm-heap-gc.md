@@ -15,7 +15,7 @@ Gabage Collection 에 대해 알아보려고 한다.
 ### JVM Heap 영역
 ---
 
-저번 글에서 봤던 JVM의 Run Data Area중에 우리가 가장 많이 듣는 영역이 바로 heap 영역일 것이다.
+[저번 글](https://cargun3.github.io/post/2020-06-25-what-is-jvm/)에서 봤던 JVM의 Run Data Area중에 우리가 가장 많이 듣는 영역이 바로 heap 영역일 것이다.
 아마 대부분 그 이유가 heap 영역의 memory issue로 인해 application이 죽는 경우도 있기 때문일 것이다.
 그러면 도대체 이 heap 영역에는 어떤 것들이 올라가게 되는 걸까?
 놀랍게도 heap 영역에는 단지 `Instance`와 `Array 관련 객체` 두 가지 종류만 올라가게 된다.
