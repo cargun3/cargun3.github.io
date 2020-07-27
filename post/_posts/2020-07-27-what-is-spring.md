@@ -1,10 +1,8 @@
-
 ---
 layout: post
 title: Spring이란 무엇인가?
 noindex: true
 comments: true
-
 ---
 Spring의 장점은 무엇인가?라는 질문에 보통 다들 IoC/DI, 경량 프레임워크, 컨테이너 등등
 잘 이야기 할 것이다. 그럼 Spring란 무엇인가? 라는 질문에 대해서는 뭐라고 대답해야할까?
