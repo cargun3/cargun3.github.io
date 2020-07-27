@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 쓰레드 세이프(Thread) 란
+title: 쓰레드 세이프(Thread Safe) 란
 noindex: true
 comments: true
 ---
