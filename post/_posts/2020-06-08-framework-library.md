@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Framework Library 차이
+categories: effective-java
 noindex: true
 comments: true
 ---
