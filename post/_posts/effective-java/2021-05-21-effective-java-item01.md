@@ -2,7 +2,6 @@
 layout: post
 title: 정적 팩토리 메서드 고려
 noindex: true
-tags:[effective-java]
 comments: true
 ---
 우리는 평소에 Framework, Library 라는 단어를 많이 듣고 또 사용하기도 한다.<br>
