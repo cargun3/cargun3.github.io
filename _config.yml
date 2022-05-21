@@ -49,8 +49,8 @@ author:
 menu:
   - title:             Post
     url:               /post/
-  - title:             effective-java
-    url:               /effective-java/
+  - title:             Post2
+    url:               /post2/
   - title:             About
     url:               /about/
 
